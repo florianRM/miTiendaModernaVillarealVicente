@@ -1,0 +1,64 @@
+#izq{
+    width: 40%;
+    
+    float: left;
+    height: auto;
+    margin-right: 1em;
+    
+}#der{
+   
+    width: 50%;
+    
+    float: left;
+    height: auto;
+
+}
+#iconoError{
+    width:300px;
+    height: 300px;
+    margin-left: 50%;
+    margin-top: 40%;
+}#TextoGrande{
+    margin-top: 34%;
+    font-size: 70px;
+    margin-left: 40%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    
+}#TextoChico{
+    font-size: 30px;
+    margin-left: 30%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+}#codError{
+    margin-left: 30%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    color: grey;
+}body{
+    
+    /* Centramos el fondo horizontal y verticalmente */
+    background-position: center center;
+    /* El fonde no se repite */
+    /* background-repeat: no-repeat; */
+    /* Fijamos la imagen a la ventana para que no supere el alto de la ventana */
+    background-attachment: fixed;
+    /* El fonde se re-escala automáticamente */
+    background-size: cover;
+    /* Color de fondo si la imagen no se encuentra o mientras se está cargando */
+    background-color: #FFF;
+    
+    font-family: "Times New Roman", Times, serif;
+}
+/* Background para ancho máximo del navegador */
+@media only screen and (max-device-width: 767px){
+    body{
+    background-image: url("images/fondo.svg") ;
+}
+}
+
+@media only screen and (max-width: 767px) {
+body {
+    background-image: url("images/fondo.svg") ;
+}
+}

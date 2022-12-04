@@ -1,0 +1,1104 @@
+{
+	"info": {
+		"_postman_id": "d0208c42-5435-4cef-9c1b-4d7f33aec071",
+		"name": "MoviesVillarreal",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24408333"
+	},
+	"item": [
+		{
+			"name": "Login a ListMovies",
+			"item": [
+				{
+					"name": "Get ListMovies sin parametros",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/MoviesVillarreal/ListMovies",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"MoviesVillarreal",
+								"ListMovies"
+							]
+						},
+						"description": "accediendo a la lista peliculas por get sin parametros"
+					},
+					"response": []
+				},
+				{
+					"name": "Get ListMovies con argumento correcto",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/MoviesVillarreal/ListMovies?username=inma&password=inma",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"MoviesVillarreal",
+								"ListMovies"
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": "inma"
+								},
+								{
+									"key": "password",
+									"value": "inma"
+								}
+							]
+						},
+						"description": "StartFragment\n\naccediendo a la lista peliculas por get con parametros correcto\n\nEndFragment"
+					},
+					"response": []
+				},
+				{
+					"name": "Get ListMovies con parametros",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/MoviesVillarreal/ListMovies?username=inma&password=inma",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"MoviesVillarreal",
+								"ListMovies"
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": "inma"
+								},
+								{
+									"key": "password",
+									"value": "inma"
+								}
+							]
+						},
+						"description": "accediendo a la lista peliculas por get con parametros"
+					},
+					"response": []
+				},
+				{
+					"name": "Get ListMovies con parametros vacios",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/MoviesVillarreal/ListMovies?username=&password=",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"MoviesVillarreal",
+								"ListMovies"
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": ""
+								},
+								{
+									"key": "password",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post ListMovies con usuario correcto ADMIN",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/MoviesVillarreal/ListMovies?username=inma&password=inma",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"MoviesVillarreal",
+								"ListMovies"
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": "inma"
+								},
+								{
+									"key": "password",
+									"value": "inma"
+								}
+							]
+						},
+						"description": "StartFragment\n\naccediendo a la lista peliculas por POST con parametros correcto, usuario admin\n\nEndFragment"
+					},
+					"response": []
+				},
+				{
+					"name": "Post ListMovies con usuario correcto NO ADMIN",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/MoviesVillarreal/ListMovies?username=rosendo el rosendo&password=rosendo",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"MoviesVillarreal",
+								"ListMovies"
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": "rosendo el rosendo"
+								},
+								{
+									"key": "password",
+									"value": "rosendo"
+								}
+							]
+						},
+						"description": "StartFragment\n\naccediendo a la lista peliculas por POST con parametros correcto, usuario NO ADMIN\n\nEndFragment"
+					},
+					"response": []
+				},
+				{
+					"name": "Post ListMovies con usuario vacio",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/MoviesVillarreal/ListMovies?username&password",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"MoviesVillarreal",
+								"ListMovies"
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": null
+								},
+								{
+									"key": "password",
+									"value": null
+								}
+							]
+						},
+						"description": "StartFragment\n\naccediendo a la lista peliculas por Post con parametros vacios\n\nEndFragment"
+					},
+					"response": []
+				},
+				{
+					"name": "Post ListMovies sin parametros",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/MoviesVillarreal/ListMovies",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"MoviesVillarreal",
+								"ListMovies"
+							]
+						},
+						"description": "StartFragment\n\naccediendo a la lista peliculas por Post sin parametros\n\nEndFragment"
+					},
+					"response": []
+				},
+				{
+					"name": "Post ListMovies con usuario incorrecto",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/MoviesVillarreal/ListMovies?username=efewfew&password=inma",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"MoviesVillarreal",
+								"ListMovies"
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": "efewfew"
+								},
+								{
+									"key": "password",
+									"value": "inma"
+								}
+							]
+						},
+						"description": "StartFragment\n\naccediendo a la lista peliculas por Post con parametros incorrecto\n\nEndFragment"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Registro",
+			"item": [
+				{
+					"name": "registrando un usuario por get sin argumentos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/MoviesVillarreal/RegistrerUser",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"MoviesVillarreal",
+								"RegistrerUser"
+							]
+						},
+						"description": "accediendo a registrar un usuario por get sin argumentos"
+					},
+					"response": []
+				},
+				{
+					"name": "registrando un usuario por post sin argumentos",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/MoviesVillarreal/RegistrerUser",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"MoviesVillarreal",
+								"RegistrerUser"
+							]
+						},
+						"description": "accediendo a registrar un usuario por get sin argumentos"
+					},
+					"response": []
+				},
+				{
+					"name": "registrando un usuario por get con argumentos  vacios",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/MoviesVillarreal/RegistrerUser?username&password&first_name&date&admin&gender",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"MoviesVillarreal",
+								"RegistrerUser"
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": null
+								},
+								{
+									"key": "password",
+									"value": null
+								},
+								{
+									"key": "first_name",
+									"value": null
+								},
+								{
+									"key": "date",
+									"value": null
+								},
+								{
+									"key": "admin",
+									"value": null
+								},
+								{
+									"key": "gender",
+									"value": null
+								}
+							]
+						},
+						"description": "accediendo a registrar un usuario por get sin argumentos"
+					},
+					"response": []
+				},
+				{
+					"name": "registrando un usuario por get con argumentos  GET",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/MoviesVillarreal/RegistrerUser?username&password&first_name&date&admin&gender",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"MoviesVillarreal",
+								"RegistrerUser"
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": null
+								},
+								{
+									"key": "password",
+									"value": null
+								},
+								{
+									"key": "first_name",
+									"value": null
+								},
+								{
+									"key": "date",
+									"value": null
+								},
+								{
+									"key": "admin",
+									"value": null
+								},
+								{
+									"key": "gender",
+									"value": null
+								}
+							]
+						},
+						"description": "accediendo a registrar un usuario por get sin argumentos"
+					},
+					"response": []
+				},
+				{
+					"name": "registrando un usuario por post con argumentos CORRECTOS",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/MoviesVillarreal/RegistrerUser?username=javibu&password=javibuu&first_name=javibu&date=2005-10-10&admin=0&gender=Male&last_name=javibu",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"MoviesVillarreal",
+								"RegistrerUser"
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": "javibu"
+								},
+								{
+									"key": "password",
+									"value": "javibuu"
+								},
+								{
+									"key": "first_name",
+									"value": "javibu"
+								},
+								{
+									"key": "date",
+									"value": "2005-10-10"
+								},
+								{
+									"key": "admin",
+									"value": "0"
+								},
+								{
+									"key": "gender",
+									"value": "Male"
+								},
+								{
+									"key": "last_name",
+									"value": "javibu"
+								}
+							]
+						},
+						"description": "accediendo a registrar un usuario por post parametros correctos"
+					},
+					"response": []
+				},
+				{
+					"name": "registrando un usuario por post con argumentos vacios",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/MoviesVillarreal/RegistrerUser?username=javibu&password=javibuu&first_name=javibu&date=2005-10-10&admin=0&gender=Male&last_name=javibu",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"MoviesVillarreal",
+								"RegistrerUser"
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": "javibu"
+								},
+								{
+									"key": "password",
+									"value": "javibuu"
+								},
+								{
+									"key": "first_name",
+									"value": "javibu"
+								},
+								{
+									"key": "date",
+									"value": "2005-10-10"
+								},
+								{
+									"key": "admin",
+									"value": "0"
+								},
+								{
+									"key": "gender",
+									"value": "Male"
+								},
+								{
+									"key": "last_name",
+									"value": "javibu"
+								}
+							]
+						},
+						"description": "accediendo a registrar un usuario por post parametros correctos"
+					},
+					"response": []
+				},
+				{
+					"name": "registrando un usuario por post con argumentos  y espaciados en nombres etc. CORRECTOS",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/MoviesVillarreal/RegistrerUser?username=javibu&password=javibuu&first_name=javibu&date=2005-10-10&admin=0&gender=Male&last_name=javibu",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"MoviesVillarreal",
+								"RegistrerUser"
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": "javibu"
+								},
+								{
+									"key": "password",
+									"value": "javibuu"
+								},
+								{
+									"key": "first_name",
+									"value": "javibu"
+								},
+								{
+									"key": "date",
+									"value": "2005-10-10"
+								},
+								{
+									"key": "admin",
+									"value": "0"
+								},
+								{
+									"key": "gender",
+									"value": "Male"
+								},
+								{
+									"key": "last_name",
+									"value": "javibu"
+								}
+							]
+						},
+						"description": "accediendo a registrar un usuario por post parametros correctos"
+					},
+					"response": []
+				},
+				{
+					"name": "registrando un usuario por post con contraseña menor de 7 caracteres",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/MoviesVillarreal/RegistrerUser?username=javibu&password=javibu&first_name=javibu&date=2005-10-10&admin=0&gender=Male&last_name=javibu",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"MoviesVillarreal",
+								"RegistrerUser"
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": "javibu"
+								},
+								{
+									"key": "password",
+									"value": "javibu"
+								},
+								{
+									"key": "first_name",
+									"value": "javibu"
+								},
+								{
+									"key": "date",
+									"value": "2005-10-10"
+								},
+								{
+									"key": "admin",
+									"value": "0"
+								},
+								{
+									"key": "gender",
+									"value": "Male"
+								},
+								{
+									"key": "last_name",
+									"value": "javibu"
+								}
+							]
+						},
+						"description": "accediendo a registrar un usuario por post parametros correctos"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Add Movie",
+			"item": [
+				{
+					"name": "Post ListMovies con usuario correcto ADMIN",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/MoviesVillarreal/ListMovies?username=inma&password=inma",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"MoviesVillarreal",
+								"ListMovies"
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": "inma"
+								},
+								{
+									"key": "password",
+									"value": "inma"
+								}
+							]
+						},
+						"description": "StartFragment\n\naccediendo a la lista peliculas por POST con parametros correcto, usuario admin\n\nEndFragment"
+					},
+					"response": []
+				},
+				{
+					"name": "AÑADIR UN ARTICULO CON CAMPOS CORRECTOS",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/MoviesVillarreal/AddArticleMethod?title=VICENT&description=bella&precio=5.0&categorias=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"MoviesVillarreal",
+								"AddArticleMethod"
+							],
+							"query": [
+								{
+									"key": "title",
+									"value": "VICENT"
+								},
+								{
+									"key": "description",
+									"value": "bella"
+								},
+								{
+									"key": "precio",
+									"value": "5.0"
+								},
+								{
+									"key": "categorias",
+									"value": "1"
+								}
+							]
+						},
+						"description": "StartFragment\n\naccediendo a la lista peliculas por POST con parametros correcto, usuario admin\n\nEndFragment"
+					},
+					"response": []
+				},
+				{
+					"name": "AÑADIR UN ARTICULO CON CAMPOS SIN TITULO",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/MoviesVillarreal/AddArticleMethod?title=VICENT&description=bella&precio=5.0&categorias=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"MoviesVillarreal",
+								"AddArticleMethod"
+							],
+							"query": [
+								{
+									"key": "title",
+									"value": "VICENT"
+								},
+								{
+									"key": "description",
+									"value": "bella"
+								},
+								{
+									"key": "precio",
+									"value": "5.0"
+								},
+								{
+									"key": "categorias",
+									"value": "1"
+								}
+							]
+						},
+						"description": "StartFragment\n\naccediendo a la lista peliculas por POST con parametros correcto, usuario admin\n\nEndFragment"
+					},
+					"response": []
+				},
+				{
+					"name": "AÑADIR UN ARTICULO CON CAMPOS SIN DESCRIPCION",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/MoviesVillarreal/AddArticleMethod?title=VICENT&description=bella&precio=5.0&categorias=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"MoviesVillarreal",
+								"AddArticleMethod"
+							],
+							"query": [
+								{
+									"key": "title",
+									"value": "VICENT"
+								},
+								{
+									"key": "description",
+									"value": "bella"
+								},
+								{
+									"key": "precio",
+									"value": "5.0"
+								},
+								{
+									"key": "categorias",
+									"value": "1"
+								}
+							]
+						},
+						"description": "StartFragment\n\naccediendo a la lista peliculas por POST con parametros correcto, usuario admin\n\nEndFragment"
+					},
+					"response": []
+				},
+				{
+					"name": "AÑADIR UN ARTICULO CON CAMPOS SIN PRECIO",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/MoviesVillarreal/AddArticleMethod?title=VICENT&description=bella&precio=5.0&categorias=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"MoviesVillarreal",
+								"AddArticleMethod"
+							],
+							"query": [
+								{
+									"key": "title",
+									"value": "VICENT"
+								},
+								{
+									"key": "description",
+									"value": "bella"
+								},
+								{
+									"key": "precio",
+									"value": "5.0"
+								},
+								{
+									"key": "categorias",
+									"value": "1"
+								}
+							]
+						},
+						"description": "StartFragment\n\naccediendo a la lista peliculas por POST con parametros correcto, usuario admin\n\nEndFragment"
+					},
+					"response": []
+				},
+				{
+					"name": "AÑADIR UN ARTICULO CON CAMPOS SIN CATEGORIA",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/MoviesVillarreal/AddArticleMethod?title=VICENT&description=bella&precio=5.0&categorias=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"MoviesVillarreal",
+								"AddArticleMethod"
+							],
+							"query": [
+								{
+									"key": "title",
+									"value": "VICENT"
+								},
+								{
+									"key": "description",
+									"value": "bella"
+								},
+								{
+									"key": "precio",
+									"value": "5.0"
+								},
+								{
+									"key": "categorias",
+									"value": "1"
+								}
+							]
+						},
+						"description": "StartFragment\n\naccediendo a la lista peliculas por POST con parametros correcto, usuario admin\n\nEndFragment"
+					},
+					"response": []
+				},
+				{
+					"name": "AÑADIR UN ARTICULO CON CAMPOS VACIOS",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/MoviesVillarreal/AddArticleMethod?title=VICENT&description=bella&precio=5.0&categorias=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"MoviesVillarreal",
+								"AddArticleMethod"
+							],
+							"query": [
+								{
+									"key": "title",
+									"value": "VICENT"
+								},
+								{
+									"key": "description",
+									"value": "bella"
+								},
+								{
+									"key": "precio",
+									"value": "5.0"
+								},
+								{
+									"key": "categorias",
+									"value": "1"
+								}
+							]
+						},
+						"description": "StartFragment\n\naccediendo a la lista peliculas por POST con parametros correcto, usuario admin\n\nEndFragment"
+					},
+					"response": []
+				},
+				{
+					"name": "AÑADIR UN ARTICULO CON CAMPOS VACIOS GET",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/MoviesVillarreal/AddArticleMethod?title=&description=&precio=&categorias=",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"MoviesVillarreal",
+								"AddArticleMethod"
+							],
+							"query": [
+								{
+									"key": "title",
+									"value": ""
+								},
+								{
+									"key": "description",
+									"value": ""
+								},
+								{
+									"key": "precio",
+									"value": ""
+								},
+								{
+									"key": "categorias",
+									"value": ""
+								}
+							]
+						},
+						"description": "StartFragment\n\naccediendo a la lista peliculas por POST con parametros correcto, usuario admin\n\nEndFragment"
+					},
+					"response": []
+				},
+				{
+					"name": "AÑADIR UN ARTICULO CON SIN CAMPOS",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/MoviesVillarreal/AddArticleMethod?title=VICENT&description=bella&precio=5.0&categorias=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"MoviesVillarreal",
+								"AddArticleMethod"
+							],
+							"query": [
+								{
+									"key": "title",
+									"value": "VICENT"
+								},
+								{
+									"key": "description",
+									"value": "bella"
+								},
+								{
+									"key": "precio",
+									"value": "5.0"
+								},
+								{
+									"key": "categorias",
+									"value": "1"
+								}
+							]
+						},
+						"description": "StartFragment\n\naccediendo a la lista peliculas por POST con parametros correcto, usuario admin\n\nEndFragment"
+					},
+					"response": []
+				},
+				{
+					"name": "AÑADIR UN ARTICULO CON SIN CAMPOS GET",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/MoviesVillarreal/AddArticleMethod",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"MoviesVillarreal",
+								"AddArticleMethod"
+							]
+						},
+						"description": "StartFragment\n\naccediendo a la lista peliculas por POST con parametros correcto, usuario admin\n\nEndFragment"
+					},
+					"response": []
+				},
+				{
+					"name": "AÑADIR UN ARTICULO CON CAMPOS CORRECTOS MEDIANTE GET",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/MoviesVillarreal/AddArticleMethod?title=VICENT&description=bella&precio=5.0&categorias=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"MoviesVillarreal",
+								"AddArticleMethod"
+							],
+							"query": [
+								{
+									"key": "title",
+									"value": "VICENT"
+								},
+								{
+									"key": "description",
+									"value": "bella"
+								},
+								{
+									"key": "precio",
+									"value": "5.0"
+								},
+								{
+									"key": "categorias",
+									"value": "1"
+								}
+							]
+						},
+						"description": "StartFragment\n\naccediendo a la lista peliculas por POST con parametros correcto, usuario admin\n\nEndFragment"
+					},
+					"response": []
+				},
+				{
+					"name": "AÑADIR UN ARTICULO CON CAMPOS CORRECTOS  Y ESPACIADOS",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/MoviesVillarreal/AddArticleMethod?title=VICENT EL HEROE&description=SUPER HEROE&precio=10.5&categorias=5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"MoviesVillarreal",
+								"AddArticleMethod"
+							],
+							"query": [
+								{
+									"key": "title",
+									"value": "VICENT EL HEROE"
+								},
+								{
+									"key": "description",
+									"value": "SUPER HEROE"
+								},
+								{
+									"key": "precio",
+									"value": "10.5"
+								},
+								{
+									"key": "categorias",
+									"value": "5"
+								}
+							]
+						},
+						"description": "StartFragment\n\naccediendo a la lista peliculas por POST con parametros correcto, usuario admin\n\nEndFragment"
+					},
+					"response": []
+				},
+				{
+					"name": "AÑADIR UN ARTICULO CON CAMPOS CORRECTOS  Y ESPACIADOS MEDIANTE GET",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/MoviesVillarreal/AddArticleMethod?title=VICENT EL HEROE&description=SUPER HEROE&precio=10.5&categorias=5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"MoviesVillarreal",
+								"AddArticleMethod"
+							],
+							"query": [
+								{
+									"key": "title",
+									"value": "VICENT EL HEROE"
+								},
+								{
+									"key": "description",
+									"value": "SUPER HEROE"
+								},
+								{
+									"key": "precio",
+									"value": "10.5"
+								},
+								{
+									"key": "categorias",
+									"value": "5"
+								}
+							]
+						},
+						"description": "StartFragment\n\naccediendo a la lista peliculas por POST con parametros correcto, usuario admin\n\nEndFragment"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
